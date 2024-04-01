@@ -1,3 +1,44 @@
 /Backend/BalloterAPI/vendor
 /Backend/BalloterAPI/.env
+/Backend/BalloterAPI/.DS_Store
+/Backend/BalloterAPI/.thumbs.db
+/Backend/BalloterAPI/node_modules
+/Backend/BalloterAPI/storage/logs
+
 /Frontend/BalloterFront/node_modules
+
+
+
+# Quasar core related directories
+/Backend/BalloterAPI/.quasar
+/Backend/BalloterAPI/dist
+/Backend/BalloterAPI/quasar.config.*.temporary.compiled*
+
+# Cordova related directories and files
+/Backend/BalloterAPI/src-cordova/node_modules
+/Backend/BalloterAPI/src-cordova/platforms
+/Backend/BalloterAPI/src-cordova/plugins
+/Backend/BalloterAPI/src-cordova/www
+
+# Capacitor related directories and files
+/Backend/BalloterAPI/src-capacitor/www
+/Backend/BalloterAPI/src-capacitor/node_modules
+
+# BEX related directories and files
+/Backend/BalloterAPI/src-bex/www
+/Backend/BalloterAPI/src-bex/js/core
+
+# Log files
+/Backend/BalloterAPInpm-debug.log*
+/Backend/BalloterAPIyarn-debug.log*
+/Backend/BalloterAPIyarn-error.log*
+
+# Editor directories and files
+/Backend/BalloterAPI.idea
+/Backend/BalloterAPI*.suo
+/Backend/BalloterAPI*.ntvs*
+/Backend/BalloterAPI*.njsproj
+/Backend/BalloterAPI*.sln
+
+# local .env files
+/Backend/BalloterAPI.env.local*
