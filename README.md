@@ -6,7 +6,7 @@ as well as some sort of a LAMP stack web server with MySQL<br>
 
 1.) Download this app<br>
 2.) Open the terminal in Backend/balloterAPI<br>
-3.) Use .env.example to create .env file and configure your DB connection in it
+3.) Use .env.example to create .env file and configure your DB connection in it<br>
 4.) Run composer install<br>
 5.) Run php artisan migrate<br>
 6.) Run php artisan db:seed<br>
