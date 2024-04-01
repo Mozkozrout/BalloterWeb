@@ -1,6 +1,6 @@
 # Balloter (balloterfront)
 
-Aplikaci pro tvorbu digitálních debatních ballotů
+Frontend for the app made in Quasar framework
 
 ## Install the dependencies
 ```bash
