@@ -19,6 +19,6 @@ Running PHP server might need tweaking of API endpoints<br>
 You can use a testing account or register your own<br>
 ### Testing credentials:<br>
 username: test@test.cz<br>
-password: test1234!<br>
+password: Test1234!<br>
 
 
