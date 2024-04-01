@@ -3,6 +3,7 @@ namespace App\Http\Middleware;
 use Closure;
 class PreflightResponse
 {
+    #TODO fix this middleware, so i don't have to use .htaccess for CORS
     /**
     * Handle an incoming request.
     *
