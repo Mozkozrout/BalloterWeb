@@ -8,9 +8,17 @@ as well as some sort of a LAMP stack web server with MySQL<br>
 2.) Open the terminal in Backend/balloterAPI<br>
 3.) Use .env.example to create .env file and configure your DB connection in it
 4.) Run composer install<br>
-5.) Run artisan migrate<br>
-6.) Run your web server in the Backend/public folder or run php -S localhost:8080 -t ./public<br>
+5.) Run php artisan migrate<br>
+6.) Run php artisan db:seed<br>
+7.) Run your web server in the Backend/public folder or run php -S localhost:8080 -t ./public<br>
 Running PHP server might need tweaking of API endpoints<br>
-7.) Open the terminal in Frontend/BalloterFront<br>
-8.) Run yarn install<br>
-9.) Run yarn quasar dev<br>
+8.) Open the terminal in Frontend/BalloterFront<br>
+9.) Run yarn install<br>
+10.) Run yarn quasar dev<br>
+
+You can use a testing account or register your own<br>
+### Testing credentials:<br>
+username: test@test.cz<br>
+password: test1234!<br>
+
+
