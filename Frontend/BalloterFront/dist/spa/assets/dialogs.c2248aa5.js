@@ -1,0 +1,1 @@
+import{j as a,D as e}from"./index.0f3dcf3a.js";import{i18n as o}from"./i18n.ee4c38a4.js";import"./index.59941a88.js";function i(){e.create({title:o.global.t("menu.warning.title"),message:o.global.t("menu.warning.message"),ok:{flat:!0,color:"light-blue-13"}})}const l={unauthorized:i};var s=a(({app:t})=>{t.config.globalProperties.$dialogs=l});export{s as default,l as dialogs};
