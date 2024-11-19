@@ -121,16 +121,16 @@ module.exports = configure(function (/* ctx */) {
     animations: [],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#sourcefiles
-    // sourceFiles: {
+     sourceFiles: {
     //   rootComponent: 'src/App.vue',
     //   router: 'src/router/index',
     //   store: 'src/store/index',
     //   registerServiceWorker: 'src-pwa/register-service-worker',
     //   serviceWorker: 'src-pwa/custom-service-worker',
     //   pwaManifestFile: 'src-pwa/manifest.json',
-    //   electronMain: 'src-electron/electron-main',
-    //   electronPreload: 'src-electron/electron-preload'
-    // },
+       electronMain: './src-electron/electron-main',
+       electronPreload: './src-electron/electron-preload'
+    },
 
     // https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr
     ssr: {
@@ -184,8 +184,7 @@ module.exports = configure(function (/* ctx */) {
 
       inspectPort: 5858,
 
-      bundler: 'packager', // 'packager' or 'builder'
-
+      bundler: 'builder', // 'packager' or 'builder'
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
         // OS X / Mac App Store
@@ -200,7 +199,23 @@ module.exports = configure(function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'balloterfront',
+        appId: 'com.balloterfront.id', // Your app ID
+        productName: 'Balloter', // The name of your app
+        directories: {
+          output: 'dist/electron' // Output directory for builds
+        },
+        files: [
+          'dist/spa/**/*', // Include your built SPA files
+          'src-electron/**/*' // Include your Electron files
+        ],
+        win:{
+          target:[
+            {
+              target: 'nsis', // NSIS installer target for Windows
+              arch: ['x64'] // 64-bit architecture
+            }
+          ]
+        }
       },
     },
 

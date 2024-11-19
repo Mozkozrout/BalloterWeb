@@ -11,7 +11,7 @@
  * Boot files are your "main.js"
  **/
 
-import lang from 'quasar/lang/cs'
+import lang from 'quasar/lang/cs.js'
 
 
 
