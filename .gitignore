@@ -10,6 +10,11 @@
 /Frontend/BalloterFront/src-electron/dist
 /Frontend/BalloterFront/dist
 
+/OfflineForm/BalloterOffline/node_modules
+/OfflineForm/BalloterOffline/src-electron/node_modules
+/OfflineForm/BalloterOffline/src-electron/dist
+/OfflineForm/BalloterOffline/dist
+
 *.log
 *.tmp
 .env
