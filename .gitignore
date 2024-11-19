@@ -6,8 +6,12 @@
 /Backend/BalloterAPI/storage/logs
 
 /Frontend/BalloterFront/node_modules
+/Frontend/BalloterFront/src-electron/node_modules
+/Frontend/BalloterFront/src-electron/dist
 
-
+*.log
+*.tmp
+.env
 
 # Quasar core related directories
 /Backend/BalloterAPI/.quasar
@@ -42,3 +46,4 @@
 
 # local .env files
 /Backend/BalloterAPI.env.local*
+/Backend/BalloterAPI.env*
