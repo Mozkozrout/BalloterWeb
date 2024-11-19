@@ -17,7 +17,17 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->group(['prefix' => 'api'], function () use ($router) {
+$router->options(
+    '/{any:.*}', 
+    [
+        'middleware' => ['cors'], 
+        function (){ 
+            return response(['status' => 'success']); 
+        }
+    ]
+);
+
+$router->group(['prefix' => 'api', 'middleware' => 'cors'], function () use ($router) {
     $router->post('login', ['uses' => 'AuthController@login']);
 	$router->get('logout', ['uses' => 'AuthController@logout']);
     $router->post('register', ['uses' => 'AuthController@register']);
