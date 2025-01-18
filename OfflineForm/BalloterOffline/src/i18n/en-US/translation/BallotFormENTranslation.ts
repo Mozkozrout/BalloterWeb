@@ -1,0 +1,122 @@
+export default {
+  //BallotForm
+  title: 'Ballot Modification',
+  tooltip: 'Click to show/hide prep-time timers on small screens',
+  basicInfo: {
+    title: 'Basic Information',
+    tournament: 'Tournament',
+    motion: 'Motion',
+    date: 'Date',
+    date_close: 'Close',
+    place: 'Place',
+    name: 'Name of the adjudicator',
+    surname: 'Surname of the adjudicator',
+    teamAFF: 'Tým Affirmation',
+    teamNEG: 'Tým Negation',
+  },
+  speakers: {
+    title: 'Individual Speakers',
+    A1: 'A1',
+    A2: 'A2',
+    A3: 'A3',
+    N1: 'N1',
+    N2: 'N2',
+    N3: 'N3',
+    speaker: 'Speaker',
+    comment: 'Comment',
+    content: 'Content',
+    strategy: 'Strategy',
+    style: 'Style',
+    cq: 'Cross questions',
+    sum: 'Sum of points',
+    tooltip: {
+      content:
+        'View the Help table about Content and select the points (20 - 40)',
+      strategy:
+        'View the Help table about Strategy and select the points (15 - 30)',
+      style: 'View the Help table about Style and select the points (15 - 30)',
+      cq: 'Cross Examination - (-5 - +5) or (1 - 10) - enter the +/- sign explictly, pls',
+    },
+    advice: {
+      title: 'You may mention something from the',
+      content: {
+        title: "Content category, about speaker's ",
+        analysis: 'analysis. (awarded ',
+        proving: 'proving. (awawrded ',
+        impacts: 'impacts. (awarded ',
+        reactions: 'reactions. (awarded ',
+      },
+      strategy: {
+        title: "Strategy category, about speaker's ",
+        structure: 'speech structure. (awarded ',
+        timeWork: 'work with time. (awarded ',
+        teamWork: 'team-work. (awarded ',
+        roleFulfillment: 'role-fulfillment. (awarded ',
+      },
+      style: {
+        title: "Style category, about speaker's ",
+        language: 'language. (awarded ',
+        voice: 'voice and diction. (awarded ',
+        gestures: 'gestures. (awarded ',
+        eyeContact: 'eye contact and emotions. (awarded ',
+      },
+      cq: 'Cross questions, oh yeah',
+      points: ' points)',
+    },
+  },
+  decision: {
+    title: 'Decision',
+    decision: 'Decision',
+    decision_tooltip: 'Concrete and detailed justification of the decision',
+    decision_hint:
+      '1) What disputes arose in the debate? How did they evolve? Describe each dispute according to the structure below.\n           a. What was the main idea advocated by the affirmation?\n           b. How did the negation respond?\n           c. Who was stronger in the argument and why?\n2. Which of the above arguments were most important to the debate and why? Which team won the debate and why did the debate end in a no/no decision? \n3) What would you recommend to the teams for future debates?\n',
+    adjWinner: "Adjudicator's winning team",
+    winner: 'Winning team',
+    adjudications: 'Adjudications',
+    bestSpeaker: 'Best speaker',
+    sumAFF: 'Sum of speaker points A',
+    sumNEG: 'Sum of speaker points N',
+  },
+  button: {
+    save: 'Save',
+    cancel: 'Cancel',
+  },
+  submit: {
+    success: 'Saved',
+    failure: 'Ballot could not be saved',
+    validate: {
+      failure: 'Ballot obsahuje neplatné hodnoty',
+    },
+    warning: {
+      title: 'Warning',
+      message:
+        'To add a ballot you must have at least your first and last name in your profile and have sufficient permissions',
+      speakerMessage: "One of the Speakers contains errors or isn't filled",
+    },
+  },
+  teams: {
+    failure: 'An error occurred while loading teams',
+  },
+  tournaments: {
+    failure: 'An error occurred while loading tournaments',
+  },
+  stopwatch: {
+    prepA: 'Prep time - A',
+    prepN: 'Perp time - N',
+    A1: 'First speach - A1',
+    A2: 'Second speach - A2',
+    A3: 'Third speach - A3',
+    N1: 'First speach - N1',
+    N2: 'Second speach - N2',
+    N3: 'Third speach - N3',
+    N3xA1: 'Cross Examination - N3 → A1',
+    A3xN1: 'Cross Examination - A3 → N1',
+    N1xA2: 'Cross Examination - N1 → A2',
+    A1xN2: 'Cross Examination - A1 → N2',
+    timePicker: {
+      ok: 'OK',
+      cancel: 'Zrušit',
+    },
+    tooltip: 'Click to set the timer manually',
+  },
+};
